@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jayaprakash M | Full Stack Developer & Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="home" role="banner">
+    <div class="hero-grid">
+      <div class="hero-img-wrap">
+        
+        <img src="E:\portfolio\images\profile.jpeg" alt="Profile Photo" 
+          alt="Jayaprakash M"
+          class="profile-img"
+          width="180"
+          height="220"
+          loading="lazy"
+        />
+      </div>
+      <div class="hero-content">
+        <h1>Jayaprakash M</h1>
+        <p class="title">Full Stack Developer, Data Analyst</p>
+        <p class="intro">
+          Hi, I'm a Full Stack Developer and Data Analyst passionate about building scalable web applications and transforming data into meaningful insights.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a Full Stack Developer and Data Analyst with a strong foundation in both front-end and back-end technologies. I specialize in building efficient, user-friendly web applications and uncovering data-driven insights to support strategic decisions. With experience in technologies like React, Node.js, Python, and SQL, I enjoy solving complex problems through clean code and meaningful data. I'm constantly learning and passionate about bridging the gap between development and data analytics to build smarter digital solutions.
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article>
+          <h3>💻 Languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </article>
+        <article>
+          <h3>⚙️ Frameworks & Libraries</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🗄️ Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🧰 Tools & Other Technologies</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>RESTful APIs</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>VS Code</li>
+            <li>Tableau / Power BI</li>
+            <li>Linux / Bash</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Intelligent Tracking Management System</h3>
+          <p>
+            A web-based solution designed to monitor and manage logistics and shipments in real time. It streamlines inventory tracking, delivery updates, and route optimization to improve operational efficiency.
+          </p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
+        </article>
+        <article class="project-card">
+          <h3>Academic Automation System using React.js</h3>
+          <p>
+            A responsive web application that automates academic processes such as student record management, attendance tracking, and internal mark computation for educational institutions.
+          </p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB</p>
+        </article>
+        <article class="project-card">
+          <h3>COVID-19 Data Analysis</h3>
+          <p>
+            An exploratory data analysis project using real-world COVID-19 datasets to uncover trends, visualize infection rates, and compare country-wise metrics through interactive charts and dashboards.
+          </p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook</p>
+        </article>
+        <article class="project-card">
+          <h3>AI in Retail Analysis</h3>
+          <p>
+            A data analytics project that leverages machine learning and AI to analyze customer purchasing patterns, optimize product placement, and predict sales trends in the retail sector.
+          </p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> Python, Scikit-learn, NumPy, Pandas, Power BI</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <table class="contact-table">
+        <tr>
+          <th>Email</th>
+          <td><a href="mailto:mjayaprakash946@gmail.com">mjayaprakash946@gmail.com</a></td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td><a href="tel:7550263270">7550263270</a></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="social-links" aria-label="Social Media Links">
+      <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+    <p>&copy; 2025 Jayaprakash M. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if(targetSection) {
+          e.preventDefault();
+          window.scrollTo({
+            top: targetSection.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
